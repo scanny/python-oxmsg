@@ -1,0 +1,1532 @@
+{
+  "pid_descriptors": [
+    {
+      "pid": "0x0001",
+      "pid_const_name": "PID_ACKNOWLEDGEMENT_MODE",
+      "pid_name": "PidTagAcknowledgementMode",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0002",
+      "pid_const_name": "PID_ALTERNATE_RECIPIENT_ALLOWED",
+      "pid_name": "PidTagAlternateRecipientAllowed",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0003",
+      "pid_const_name": "PID_AUTHORIZING_USERS",
+      "pid_name": "PidTagAuthorizingUsers",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0004",
+      "pid_const_name": "PID_AUTO_FORWARD_COMMENT",
+      "pid_name": "PidTagAutoForwardComment",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0005",
+      "pid_const_name": "PID_AUTO_FORWARDED",
+      "pid_name": "PidTagAutoForwarded",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0006",
+      "pid_const_name": "PID_CONTENT_CONFIDENTIALITY_ALGORITHM_ID",
+      "pid_name": "PidTagContentConfidentialityAlgorithmId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0007",
+      "pid_const_name": "PID_CONTENT_CORRELATOR",
+      "pid_name": "PidTagContentCorrelator",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0008",
+      "pid_const_name": "PID_CONTENT_IDENTIFIER",
+      "pid_name": "PidTagContentIdentifier",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0009",
+      "pid_const_name": "PID_CONTENT_LENGTH",
+      "pid_name": "PidTagContentLength",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x000A",
+      "pid_const_name": "PID_CONTENT_RETURN_REQUESTED",
+      "pid_name": "PidTagContentReturnRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x000B",
+      "pid_const_name": "PID_CONVERSATION_KEY",
+      "pid_name": "PidTagConversationKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x000C",
+      "pid_const_name": "PID_CONVERSION_EITS",
+      "pid_name": "PidTagConversionEits",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x000D",
+      "pid_const_name": "PID_CONVERSION_WITH_LOSS_PROHIBITED",
+      "pid_name": "PidTagConversionWithLossProhibited",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x000E",
+      "pid_const_name": "PID_CONVERTED_EITS",
+      "pid_name": "PidTagConvertedEits",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x000F",
+      "pid_const_name": "PID_DEFERRED_DELIVERY_TIME",
+      "pid_name": "PidTagDeferredDeliveryTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0010",
+      "pid_const_name": "PID_DELIVER_TIME",
+      "pid_name": "PidTagDeliverTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0011",
+      "pid_const_name": "PID_DISCARD_REASON",
+      "pid_name": "PidTagDiscardReason",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0012",
+      "pid_const_name": "PID_DISCLOSURE_OF_RECIPIENTS",
+      "pid_name": "PidTagDisclosureOfRecipients",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0013",
+      "pid_const_name": "PID_DISTRIBUTION_LIST_EXPANSION_HISTORY",
+      "pid_name": "PidTagDistributionListExpansionHistory",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0014",
+      "pid_const_name": "PID_DISTRIBUTION_LIST_EXPANSION_PROHIBITED",
+      "pid_name": "PidTagDistributionListExpansionProhibited",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0015",
+      "pid_const_name": "PID_EXPIRY_TIME",
+      "pid_name": "PidTagExpiryTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0016",
+      "pid_const_name": "PID_IMPLICIT_CONVERSION_PROHIBITED",
+      "pid_name": "PidTagImplicitConversionProhibited",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0017",
+      "pid_const_name": "PID_IMPORTANCE",
+      "pid_name": "PidTagImportance",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0019",
+      "pid_const_name": "PID_LATEST_DELIVERY_TIME",
+      "pid_name": "PidTagLatestDeliveryTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x001A",
+      "pid_const_name": "PID_MESSAGE_CLASS",
+      "pid_name": "PidTagMessageClass",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x001B",
+      "pid_const_name": "PID_MESSAGE_DELIVERY_ID",
+      "pid_name": "PidTagMessageDeliveryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x001E",
+      "pid_const_name": "PID_MESSAGE_SECURITY_LABEL",
+      "pid_name": "PidTagMessageSecurityLabel",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x001F",
+      "pid_const_name": "PID_OBSOLETED_MESSAGE_IDS",
+      "pid_name": "PidTagObsoletedMessageIds",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0020",
+      "pid_const_name": "PID_ORIGINALLY_INTENDED_RECIPIENT_NAME",
+      "pid_name": "PidTagOriginallyIntendedRecipientName",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0021",
+      "pid_const_name": "PID_ORIGINAL_EITS",
+      "pid_name": "PidTagOriginalEits",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0022",
+      "pid_const_name": "PID_ORIGINATOR_CERTIFICATE",
+      "pid_name": "PidTagOriginatorCertificate",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0023",
+      "pid_const_name": "PID_ORIGINATOR_DELIVERY_REPORT_REQUESTED",
+      "pid_name": "PidTagOriginatorDeliveryReportRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0024",
+      "pid_const_name": "PID_ORIGINATOR_RETURN_ADDRESS",
+      "pid_name": "PidTagOriginatorReturnAddress",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0025",
+      "pid_const_name": "PID_PARENT_KEY",
+      "pid_name": "PidTagParentKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0026",
+      "pid_const_name": "PID_PRIORITY",
+      "pid_name": "PidTagPriority",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0027",
+      "pid_const_name": "PID_ORIGIN_CHECK",
+      "pid_name": "PidTagOriginCheck",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0028",
+      "pid_const_name": "PID_PROOF_OF_SUBMISSION_REQUESTED",
+      "pid_name": "PidTagProofOfSubmissionRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0029",
+      "pid_const_name": "PID_READ_RECEIPT_REQUESTED",
+      "pid_name": "PidTagReadReceiptRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x002A",
+      "pid_const_name": "PID_RECEIPT_TIME",
+      "pid_name": "PidTagReceiptTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x002B",
+      "pid_const_name": "PID_RECIPIENT_REASSIGNMENT_PROHIBITED",
+      "pid_name": "PidTagRecipientReassignmentProhibited",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x002C",
+      "pid_const_name": "PID_REDIRECTION_HISTORY",
+      "pid_name": "PidTagRedirectionHistory",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x002E",
+      "pid_const_name": "PID_ORIGINAL_SENSITIVITY",
+      "pid_name": "PidTagOriginalSensitivity",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0030",
+      "pid_const_name": "PID_REPLY_TIME",
+      "pid_name": "PidTagReplyTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0031",
+      "pid_const_name": "PID_REPORT",
+      "pid_name": "PidTagReportTag",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0032",
+      "pid_const_name": "PID_REPORT_TIME",
+      "pid_name": "PidTagReportTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0034",
+      "pid_const_name": "PID_SECURITY",
+      "pid_name": "PidTagSecurity",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0036",
+      "pid_const_name": "PID_SENSITIVITY",
+      "pid_name": "PidTagSensitivity",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0037",
+      "pid_const_name": "PID_SUBJECT",
+      "pid_name": "PidTagSubject",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0038",
+      "pid_const_name": "PID_SUBJECT_MESSAGE_ID",
+      "pid_name": "PidTagSubjectMessageId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0039",
+      "pid_const_name": "PID_CLIENT_SUBMIT_TIME",
+      "pid_name": "PidTagClientSubmitTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x003A",
+      "pid_const_name": "PID_REPORT_NAME",
+      "pid_name": "PidTagReportName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x003B",
+      "pid_const_name": "PID_SENT_REPRESENTING_SEARCH_KEY",
+      "pid_name": "PidTagSentRepresentingSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x003D",
+      "pid_const_name": "PID_SUBJECT_PREFIX",
+      "pid_name": "PidTagSubjectPrefix",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x003F",
+      "pid_const_name": "PID_RECEIVED_BY_ENTRY_ID",
+      "pid_name": "PidTagReceivedByEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0040",
+      "pid_const_name": "PID_RECEIVED_BY_NAME",
+      "pid_name": "PidTagReceivedByName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0041",
+      "pid_const_name": "PID_SENT_REPRESENTING_ENTRY_ID",
+      "pid_name": "PidTagSentRepresentingEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0042",
+      "pid_const_name": "PID_SENT_REPRESENTING_NAME",
+      "pid_name": "PidTagSentRepresentingName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0043",
+      "pid_const_name": "PID_RECEIVED_REPRESENTING_ENTRY_ID",
+      "pid_name": "PidTagReceivedRepresentingEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0044",
+      "pid_const_name": "PID_RECEIVED_REPRESENTING_NAME",
+      "pid_name": "PidTagReceivedRepresentingName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0045",
+      "pid_const_name": "PID_REPORT_ENTRY_ID",
+      "pid_name": "PidTagReportEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0046",
+      "pid_const_name": "PID_READ_RECEIPT_ENTRY_ID",
+      "pid_name": "PidTagReadReceiptEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0047",
+      "pid_const_name": "PID_MESSAGE_SUBMISSION_ID",
+      "pid_name": "PidTagMessageSubmissionId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0049",
+      "pid_const_name": "PID_ORIGINAL_SUBJECT",
+      "pid_name": "PidTagOriginalSubject",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x004B",
+      "pid_const_name": "PID_ORIGINAL_MESSAGE_CLASS",
+      "pid_name": "PidTagOriginalMessageClass",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x004C",
+      "pid_const_name": "PID_ORIGINAL_AUTHOR_ENTRY_ID",
+      "pid_name": "PidTagOriginalAuthorEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x004D",
+      "pid_const_name": "PID_ORIGINAL_AUTHOR_NAME",
+      "pid_name": "PidTagOriginalAuthorName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x004E",
+      "pid_const_name": "PID_ORIGINAL_SUBMIT_TIME",
+      "pid_name": "PidTagOriginalSubmitTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x004F",
+      "pid_const_name": "PID_REPLY_RECIPIENT_ENTRIES",
+      "pid_name": "PidTagReplyRecipientEntries",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0050",
+      "pid_const_name": "PID_REPLY_RECIPIENT_NAMES",
+      "pid_name": "PidTagReplyRecipientNames",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0051",
+      "pid_const_name": "PID_RECEIVED_BY_SEARCH_KEY",
+      "pid_name": "PidTagReceivedBySearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0052",
+      "pid_const_name": "PID_RECEIVED_REPRESENTING_SEARCH_KEY",
+      "pid_name": "PidTagReceivedRepresentingSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0053",
+      "pid_const_name": "PID_READ_RECEIPT_SEARCH_KEY",
+      "pid_name": "PidTagReadReceiptSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0054",
+      "pid_const_name": "PID_REPORT_SEARCH_KEY",
+      "pid_name": "PidTagReportSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0055",
+      "pid_const_name": "PID_ORIGINAL_DELIVERY_TIME",
+      "pid_name": "PidTagOriginalDeliveryTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0057",
+      "pid_const_name": "PID_MESSAGE_TO_ME",
+      "pid_name": "PidTagMessageToMe",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0058",
+      "pid_const_name": "PID_MESSAGE_CC_ME",
+      "pid_name": "PidTagMessageCcMe",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0059",
+      "pid_const_name": "PID_MESSAGE_RECIPIENT_ME",
+      "pid_name": "PidTagMessageRecipientMe",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x005A",
+      "pid_const_name": "PID_ORIGINAL_SENDER_NAME",
+      "pid_name": "PidTagOriginalSenderName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x005B",
+      "pid_const_name": "PID_ORIGINAL_SENDER_ENTRY_ID",
+      "pid_name": "PidTagOriginalSenderEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x005C",
+      "pid_const_name": "PID_ORIGINAL_SENDER_SEARCH_KEY",
+      "pid_name": "PidTagOriginalSenderSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x005D",
+      "pid_const_name": "PID_ORIGINAL_SENT_REPRESENTING_NAME",
+      "pid_name": "PidTagOriginalSentRepresentingName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x005E",
+      "pid_const_name": "PID_ORIGINAL_SENT_REPRESENTING_ENTRY_ID",
+      "pid_name": "PidTagOriginalSentRepresentingEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x005F",
+      "pid_const_name": "PID_ORIGINAL_SENT_REPRESENTING_SEARCH_KEY",
+      "pid_name": "PidTagOriginalSentRepresentingSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0060",
+      "pid_const_name": "PID_START_DATE",
+      "pid_name": "PidTagStartDate",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0061",
+      "pid_const_name": "PID_END_DATE",
+      "pid_name": "PidTagEndDate",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0062",
+      "pid_const_name": "PID_OWNER_APPOINTMENT_ID",
+      "pid_name": "PidTagOwnerAppointmentId",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0063",
+      "pid_const_name": "PID_RESPONSE_REQUESTED",
+      "pid_name": "PidTagResponseRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0064",
+      "pid_const_name": "PID_SENT_REPRESENTING_ADDRESS_TYPE",
+      "pid_name": "PidTagSentRepresentingAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0065",
+      "pid_const_name": "PID_SENT_REPRESENTING_EMAIL_ADDRESS",
+      "pid_name": "PidTagSentRepresentingEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0066",
+      "pid_const_name": "PID_ORIGINAL_SENDER_ADDRESS_TYPE",
+      "pid_name": "PidTagOriginalSenderAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0067",
+      "pid_const_name": "PID_ORIGINAL_SENDER_EMAIL_ADDRESS",
+      "pid_name": "PidTagOriginalSenderEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0068",
+      "pid_const_name": "PID_ORIGINAL_SENT_REPRESENTING_ADDRESS_TYPE",
+      "pid_name": "PidTagOriginalSentRepresentingAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0069",
+      "pid_const_name": "PID_ORIGINAL_SENT_REPRESENTING_EMAIL_ADDRESS",
+      "pid_name": "PidTagOriginalSentRepresentingEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0070",
+      "pid_const_name": "PID_CONVERSATION_TOPIC",
+      "pid_name": "PidTagConversationTopic",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0071",
+      "pid_const_name": "PID_CONVERSATION_INDEX",
+      "pid_name": "PidTagConversationIndex",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0072",
+      "pid_const_name": "PID_ORIGINAL_DISPLAY_BCC",
+      "pid_name": "PidTagOriginalDisplayBcc",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0073",
+      "pid_const_name": "PID_ORIGINAL_DISPLAY_CC",
+      "pid_name": "PidTagOriginalDisplayCc",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0074",
+      "pid_const_name": "PID_ORIGINAL_DISPLAY_TO",
+      "pid_name": "PidTagOriginalDisplayTo",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0075",
+      "pid_const_name": "PID_RECEIVED_BY_ADDRESS_TYPE",
+      "pid_name": "PidTagReceivedByAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0076",
+      "pid_const_name": "PID_RECEIVED_BY_EMAIL_ADDRESS",
+      "pid_name": "PidTagReceivedByEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0077",
+      "pid_const_name": "PID_RECEIVED_REPRESENTING_ADDRESS_TYPE",
+      "pid_name": "PidTagReceivedRepresentingAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0078",
+      "pid_const_name": "PID_RECEIVED_REPRESENTING_EMAIL_ADDRESS",
+      "pid_name": "PidTagReceivedRepresentingEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0079",
+      "pid_const_name": "PID_ORIGINAL_AUTHOR_ADDRESS_TYPE",
+      "pid_name": "PidTagOriginalAuthorAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x007A",
+      "pid_const_name": "PID_ORIGINAL_AUTHOR_EMAIL_ADDRESS",
+      "pid_name": "PidTagOriginalAuthorEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x007B",
+      "pid_const_name": "PID_ORIGINALLY_INTENDED_RECIP_ADDRTYPE",
+      "pid_name": "PidTagOriginallyIntendedRecipAddrtype",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x007C",
+      "pid_const_name": "PID_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS",
+      "pid_name": "PidTagOriginallyIntendedRecipEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x007D",
+      "pid_const_name": "PID_TRANSPORT_MESSAGE_HEADERS",
+      "pid_name": "PidTagTransportMessageHeaders",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x007E",
+      "pid_const_name": "PID_DELEGATION",
+      "pid_name": "PidTagDelegation",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x007F",
+      "pid_const_name": "PID_TNEF_CORRELATION_KEY",
+      "pid_name": "PidTagTnefCorrelationKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0080",
+      "pid_const_name": "PID_REPORT_DISPOSITION",
+      "pid_name": "PidTagReportDisposition",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0081",
+      "pid_const_name": "PID_REPORT_DISPOSITION_MODE",
+      "pid_name": "PidTagReportDispositionMode",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0C06",
+      "pid_const_name": "PID_NON_RECEIPT_NOTIFICATION_REQUESTED",
+      "pid_name": "PidTagNonReceiptNotificationRequested",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0C15",
+      "pid_const_name": "PID_RECIPIENT_TYPE",
+      "pid_name": "PidTagRecipientType",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0C19",
+      "pid_const_name": "PID_SENDER_ENTRY_ID",
+      "pid_name": "PidTagSenderEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0C1A",
+      "pid_const_name": "PID_SENDER_NAME",
+      "pid_name": "PidTagSenderName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0C1D",
+      "pid_const_name": "PID_SENDER_SEARCH_KEY",
+      "pid_name": "PidTagSenderSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0C1E",
+      "pid_const_name": "PID_SENDER_ADDRESS_TYPE",
+      "pid_name": "PidTagSenderAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0C1F",
+      "pid_const_name": "PID_SENDER_EMAIL_ADDRESS",
+      "pid_name": "PidTagSenderEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E01",
+      "pid_const_name": "PID_DELETE_AFTER_SUBMIT",
+      "pid_name": "PidTagDeleteAfterSubmit",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0E02",
+      "pid_const_name": "PID_DISPLAY_BCC",
+      "pid_name": "PidTagDisplayBcc",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E03",
+      "pid_const_name": "PID_DISPLAY_CC",
+      "pid_name": "PidTagDisplayCc",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E04",
+      "pid_const_name": "PID_DISPLAY_TO",
+      "pid_name": "PidTagDisplayTo",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E05",
+      "pid_const_name": "PID_PARENT_DISPLAY",
+      "pid_name": "PidTagParentDisplay",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E06",
+      "pid_const_name": "PID_MESSAGE_DELIVERY_TIME",
+      "pid_name": "PidTagMessageDeliveryTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x0E07",
+      "pid_const_name": "PID_MESSAGE_FLAGS",
+      "pid_name": "PidTagMessageFlags",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0E08",
+      "pid_const_name": "PID_MESSAGE_SIZE_EXTENDED",
+      "pid_name": "PidTagMessageSizeExtended",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0E1B",
+      "pid_const_name": "PID_HAS_ATTACHMENTS",
+      "pid_name": "PidTagHasAttachments",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0E1D",
+      "pid_const_name": "PID_NORMALIZED_SUBJECT",
+      "pid_name": "PidTagNormalizedSubject",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x0E1F",
+      "pid_const_name": "PID_RTF_IN_SYNC",
+      "pid_name": "PidTagRtfInSync",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x0E20",
+      "pid_const_name": "PID_ATTACH_SIZE",
+      "pid_name": "PidTagAttachSize",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0E21",
+      "pid_const_name": "PID_ATTACH_NUMBER",
+      "pid_name": "PidTagAttachNumber",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0E23",
+      "pid_const_name": "PID_INTERNET_ARTICLE_NUMBER",
+      "pid_name": "PidTagInternetArticleNumber",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0FF4",
+      "pid_const_name": "PID_ACCESS",
+      "pid_name": "PidTagAccess",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0FF6",
+      "pid_const_name": "PID_INSTANCE_KEY",
+      "pid_name": "PidTagInstanceKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0FF7",
+      "pid_const_name": "PID_ACCESS_LEVEL",
+      "pid_name": "PidTagAccessLevel",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0FF9",
+      "pid_const_name": "PID_RECORD_KEY",
+      "pid_name": "PidTagRecordKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x0FFE",
+      "pid_const_name": "PID_OBJECT_TYPE",
+      "pid_name": "PidTagObjectType",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x0FFF",
+      "pid_const_name": "PID_ENTRY_ID",
+      "pid_name": "PidTagEntryId",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x1000",
+      "pid_const_name": "PID_BODY",
+      "pid_name": "PidTagBody",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x1009",
+      "pid_const_name": "PID_RTF_COMPRESSED",
+      "pid_name": "PidTagRtfCompressed",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x1013",
+      "pid_const_name": "PID_HTML",
+      "pid_name": "PidTagHtml",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x1016",
+      "pid_const_name": "PID_NATIVE_BODY",
+      "pid_name": "PidTagNativeBody",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x1035",
+      "pid_const_name": "PID_INTERNET_MESSAGE_ID",
+      "pid_name": "PidTagInternetMessageId",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x1039",
+      "pid_const_name": "PID_INTERNET_REFERENCES",
+      "pid_name": "PidTagInternetReferences",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x1042",
+      "pid_const_name": "PID_IN_REPLY_TO_ID",
+      "pid_name": "PidTagInReplyToId",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x1046",
+      "pid_const_name": "PID_ORIGINAL_MESSAGE_ID",
+      "pid_name": "PidTagOriginalMessageId",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x1080",
+      "pid_const_name": "PID_ICON_INDEX",
+      "pid_name": "PidTagIconIndex",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x1090",
+      "pid_const_name": "PID_FLAG_STATUS",
+      "pid_name": "PidTagFlagStatus",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3000",
+      "pid_const_name": "PID_ROW_ID",
+      "pid_name": "PidTagRowId",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3001",
+      "pid_const_name": "PID_DISPLAY_NAME",
+      "pid_name": "PidTagDisplayName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3002",
+      "pid_const_name": "PID_ADDRESS_TYPE",
+      "pid_name": "PidTagAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3003",
+      "pid_const_name": "PID_EMAIL_ADDRESS",
+      "pid_name": "PidTagEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3007",
+      "pid_const_name": "PID_CREATION_TIME",
+      "pid_name": "PidTagCreationTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x3008",
+      "pid_const_name": "PID_LAST_MODIFICATION_TIME",
+      "pid_name": "PidTagLastModificationTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x300B",
+      "pid_const_name": "PID_SEARCH_KEY",
+      "pid_name": "PidTagSearchKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x3016",
+      "pid_const_name": "PID_CONVERSATION_INDEX_TRACKING",
+      "pid_name": "PidTagConversationIndexTracking",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x340D",
+      "pid_const_name": "PID_STORE_SUPPORT_MASK",
+      "pid_name": "PidTagStoreSupportMask",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x340F",
+      "pid_const_name": "PID_STORE_UNICODE_MASK",
+      "pid_name": "PidTagStoreUnicodeMask",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3701",
+      "pid_const_name": "PID_ATTACH_DATA_BINARY",
+      "pid_name": "PidTagAttachDataBinary",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x3702",
+      "pid_const_name": "PID_ATTACH_ENCODING",
+      "pid_name": "PidTagAttachEncoding",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x3703",
+      "pid_const_name": "PID_ATTACH_EXTENSION",
+      "pid_name": "PidTagAttachExtension",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3704",
+      "pid_const_name": "PID_ATTACH_FILENAME",
+      "pid_name": "PidTagAttachFilename",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3705",
+      "pid_const_name": "PID_ATTACH_METHOD",
+      "pid_name": "PidTagAttachMethod",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3707",
+      "pid_const_name": "PID_ATTACH_LONG_FILENAME",
+      "pid_name": "PidTagAttachLongFilename",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3709",
+      "pid_const_name": "PID_ATTACH_RENDERING",
+      "pid_name": "PidTagAttachRendering",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x370B",
+      "pid_const_name": "PID_ATTACH_RENDERING_POSITION",
+      "pid_name": "PidTagAttachRenderingPosition",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x370E",
+      "pid_const_name": "PID_ATTACH_MIME",
+      "pid_name": "PidTagAttachMimeTag",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3712",
+      "pid_const_name": "PID_ATTACH_CONTENT_ID",
+      "pid_name": "PidTagAttachContentId",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3714",
+      "pid_const_name": "PID_ATTACH_FLAGS",
+      "pid_name": "PidTagAttachFlags",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x39FE",
+      "pid_const_name": "PID_SMTP_ADDRESS",
+      "pid_name": "PidTagSmtpAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3F08",
+      "pid_const_name": "PID_INITIAL_DETAILS_PANE",
+      "pid_name": "PidTagInitialDetailsPane",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3FDE",
+      "pid_const_name": "PID_INTERNET_CODEPAGE",
+      "pid_name": "PidTagInternetCodepage",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3FF1",
+      "pid_const_name": "PID_MESSAGE_LOCALE_ID",
+      "pid_name": "PidTagMessageLocaleId",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x3FFA",
+      "pid_const_name": "PID_LAST_MODIFIER_NAME",
+      "pid_name": "PidTagLastModifierName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x4022",
+      "pid_const_name": "PID_CREATOR_ADDRESS_TYPE",
+      "pid_name": "PidTagCreatorAddressType",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x4023",
+      "pid_const_name": "PID_CREATOR_EMAIL_ADDRESS",
+      "pid_name": "PidTagCreatorEmailAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x4038",
+      "pid_const_name": "PID_CREATOR_SIMPLE_DISPLAY_NAME",
+      "pid_name": "PidTagCreatorSimpleDisplayName",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x5D01",
+      "pid_const_name": "PID_SENDER_SMTP_ADDRESS",
+      "pid_name": "PidTagSenderSmtpAddress",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x65E2",
+      "pid_const_name": "PID_CHANGE_KEY",
+      "pid_name": "PidTagChangeKey",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x65E3",
+      "pid_const_name": "PID_PREDECESSOR_CHANGE_LIST",
+      "pid_name": "PidTagPredecessorChangeList",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
+      "pid": "0x7FFA",
+      "pid_const_name": "PID_ATTACHMENT_LINK_ID",
+      "pid_name": "PidTagAttachmentLinkId",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x7FFB",
+      "pid_const_name": "PID_EXCEPTION_START_TIME",
+      "pid_name": "PidTagExceptionStartTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x7FFC",
+      "pid_const_name": "PID_EXCEPTION_END_TIME",
+      "pid_name": "PidTagExceptionEndTime",
+      "ptyp": "0x0040",
+      "ptyp_const_name": "PTYP_TIME",
+      "ptyp_name": "PtypTime"
+    },
+    {
+      "pid": "0x7FFD",
+      "pid_const_name": "PID_ATTACHMENT_FLAGS",
+      "pid_name": "PidTagAttachmentFlags",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
+    },
+    {
+      "pid": "0x7FFE",
+      "pid_const_name": "PID_ATTACHMENT_HIDDEN",
+      "pid_name": "PidTagAttachmentHidden",
+      "ptyp": "0x000B",
+      "ptyp_const_name": "PTYP_BOOLEAN",
+      "ptyp_name": "PtypBoolean"
+    },
+    {
+      "pid": "0x8004",
+      "pid_const_name": "PID_ADDRESS_BOOK_FOLDER_PATHNAME",
+      "pid_name": "PidTagAddressBookFolderPathname",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x8005",
+      "pid_const_name": "PID_ADDRESS_BOOK_MANAGER_DISTINGUISHED_NAME",
+      "pid_name": "PidTagAddressBookManagerDistinguishedName",
+      "ptyp": "0x000D",
+      "ptyp_const_name": "PTYP_OBJECT",
+      "ptyp_name": "PtypObject"
+    },
+    {
+      "pid": "0x8006",
+      "pid_const_name": "PID_ADDRESS_BOOK_HOME_MESSAGE_DATABASE",
+      "pid_name": "PidTagAddressBookHomeMessageDatabase",
+      "ptyp": "0x000D",
+      "ptyp_const_name": "PTYP_OBJECT",
+      "ptyp_name": "PtypObject"
+    },
+    {
+      "pid": "0x8007",
+      "pid_const_name": "PID_LID_CONTACT_ITEM_DATA",
+      "pid_name": "PidLidContactItemData",
+      "ptyp": "0x001F",
+      "ptyp_const_name": "PTYP_STRING",
+      "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x8008",
+      "pid_const_name": "PID_ADDRESS_BOOK_IS_MEMBER_OF_DISTRIBUTION_LIST",
+      "pid_name": "PidTagAddressBookIsMemberOfDistributionList",
+      "ptyp": "0x000D",
+      "ptyp_const_name": "PTYP_OBJECT",
+      "ptyp_name": "PtypObject"
+    },
+    {
+      "pid": "0x8009",
+      "pid_const_name": "PID_ADDRESS_BOOK_MEMBER",
+      "pid_name": "PidTagAddressBookMember",
+      "ptyp": "0x000D",
+      "ptyp_const_name": "PTYP_OBJECT",
+      "ptyp_name": "PtypObject"
+    }
+  ]
+}
