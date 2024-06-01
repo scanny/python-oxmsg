@@ -17,6 +17,26 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
+nav:
+  - index.md
+  - message.md
+  - attachment.md
+  - recipient.md
+  - properties.md
+
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            group_by_category: false
+            members_order: source
+            show_signature_annotations: true
+            show_source: false
+            signature_crossrefs: true
+
 theme:
   name: material
   features:
