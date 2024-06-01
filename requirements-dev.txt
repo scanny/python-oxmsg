@@ -1,0 +1,6 @@
+build
+pyright
+pytest
+pytest-xdist
+ruff-lsp
+twine

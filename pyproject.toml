@@ -1,0 +1,120 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-oxmsg"
+authors = [{name = "Steve Canny", email = "stcanny@gmail.com"}]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: File Formats",
+    "Topic :: Office/Business :: Office Suites",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "click",
+    "olefile",
+    "typing_extensions>=4.9.0",
+]
+description = "Extract attachments from Outlook .msg files."
+dynamic = ["version"]
+keywords = ["ms-oxmsg", "outlook", "email"]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+oxmsg = "oxmsg.cli:oxmsg"
+
+[project.urls]
+Changelog = "https://github.com/scanny/python-oxmsg/blob/master/CHANGELOG.md"
+Documentation = "https://scanny.github.io/python-oxmsg/"
+Homepage = "https://github.com/scanny/python-oxmsg"
+Repository = "https://github.com/scanny/python-oxmsg"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.coverage.run]
+omit = [
+    "*/domain/model.py"
+]
+
+[tool.pyright]
+include = ["src/oxmsg", "tests"]
+pythonPlatform = "All"
+pythonVersion = "3.9"
+reportImportCycles = true
+reportUnnecessaryCast = true
+reportUnnecessaryTypeIgnoreComment = true
+stubPath = "./typings"
+typeCheckingMode = "strict"
+verboseOutput = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # -- exit on any warning not explicitly ignored here --
+    "error",
+
+    # -- pytest-xdist plugin may warn about `looponfailroots` deprecation --
+    "ignore::DeprecationWarning:xdist",
+
+    # -- pytest complains when pytest-xdist is not installed --
+    "ignore:Unknown config option. looponfailroots:pytest.PytestConfigWarning",
+]
+looponfailroots = ["src", "tests"]
+norecursedirs = [
+    "*.egg-info",
+    ".git",
+    "_scratch",
+    ".tox",
+]
+python_files = ["test_*.py"]
+python_classes = ["Test", "Describe"]
+python_functions = ["it_", "its_", "they_", "and_", "but_"]
+testpaths = "tests"
+
+[tool.ruff]
+exclude = []
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+ignore = [
+    "COM812",   # -- over-aggressively insists on trailing commas where not desired --
+    "PT001",    # -- wants @pytest.fixture() instead of @pytest.fixture --
+    "PT005",    # -- rejects leading underscore fixtures, as commonly appear in unit tests --
+]
+select = [
+    "C4",       # -- flake8-comprehensions --
+    "COM",      # -- flake8-commas --
+    "E",        # -- pycodestyle errors --
+    "F",        # -- pyflakes --
+    "I",        # -- isort (imports) --
+    "PLR0402",  # -- Name compared with itself like `foo == foo` --
+    "PT",       # -- flake8-pytest-style --
+    "SIM",      # -- flake8-simplify --
+    "UP015",    # -- redundant `open()` mode parameter (like "r" is default) --
+    "UP018",    # -- Unnecessary {literal_type} call like `str("abc")`. (rewrite as a literal) --
+    "UP032",    # -- Use f-string instead of `.format()` call --
+    "UP034",    # -- Avoid extraneous parentheses --
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["oxmsg"]
+known-local-folder = []
+
+[tool.setuptools.dynamic]
+version = {attr = "oxmsg.__version__"}
