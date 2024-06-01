@@ -34,7 +34,7 @@ pip install git+https://github.com/scanny/python-oxmsg@develop
 >>> attachment = msg.attachments[0]
 >>> attachment.attached_by_value  # -- attachment bytes only available when True --
 True
->>> attachment.filename
+>>> attachment.file_name
 'q1-objectives.pptx'
 >>> attachment.mime_type
 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -42,7 +42,7 @@ True
 96407
 >>> attachment.last_modified.isoformat()
 '2023-11-18T16:08:17+00:00'
->>> with open(attachment.filename, "wb") as f:
+>>> with open(attachment.file_name, "wb") as f:
 ...     f.write(attachment.file_bytes)
 ```
 

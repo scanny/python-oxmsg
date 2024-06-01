@@ -23,7 +23,7 @@ pip install python-oxmsg
 >>> attachment.attached_by_value  # -- attachment bytes only available when True --
 True
 
->>> attachment.filename
+>>> attachment.file_name
 'q1-objectives.pptx'
 
 >>> attachment.mime_type
@@ -35,7 +35,7 @@ True
 >>> attachment.last_modified.isoformat()
 '2023-11-18T16:08:17+00:00'
 
->>> with open(attachment.filename, "wb") as f:
+>>> with open(attachment.file_name, "wb") as f:
 ...     f.write(attachment.file_bytes)
 
 ```
