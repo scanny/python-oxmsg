@@ -28,7 +28,7 @@ test:
 	pytest -x
 
 .PHONY: test-release
-test-release: build
+test-release: clean build
 	twine upload --repository testpypi dist/*
 
 .PHONY: release

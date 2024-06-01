@@ -1,4 +1,4 @@
-__version__ = "0.0.1a0"
+__version__ = "0.0.1"
 
 from oxmsg.message import Message
 
