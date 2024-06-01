@@ -23,6 +23,86 @@ Occasionally it can be useful to install from a GitHub branch, perhaps to try ou
 pip install git+https://github.com/scanny/python-oxmsg@develop
 ```
 
+## Usage
+```python
+>>> from oxmsg import Message
+>>> msg = Message.load("message.msg")
+>>> msg.message_class
+'IPM.Note'
+>>> msg.attachment_count
+1
+>>> attachment = msg.attachments[0]
+>>> attachment.attached_by_value  # -- attachment bytes only available when True --
+True
+>>> attachment.filename
+'q1-objectives.pptx'
+>>> attachment.mime_type
+'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+>>> attachment.size
+96407
+>>> attachment.last_modified.isoformat()
+'2023-11-18T16:08:17+00:00'
+>>> with open(attachment.filename, "wb") as f:
+...     f.write(attachment.file_bytes)
+```
+
+## CLI
+
+`python-oxmsg` includes a CLI that may be useful for diagnostic purposes.
+```bash
+$ oxmsg
+Usage: oxmsg [OPTIONS] COMMAND [ARGS]...
+
+  Utility CLI for `python-oxmsg`.
+
+  Provides the subcommands listed below, useful for exploratory or diagnostic
+  purposes.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  dump     Write a summary of the MSG file's properties to stdout.
+  storage  Summarize low-level "directories and files" structure of MSG...
+
+```
+
+The `dump` sub-command displays all properties available in the message along with the
+PID and PTYP information required to access those properties from a `Properties` object.
+
+```bash
+$ oxmsg dump message.msg
+
+------------------
+Message Properties
+------------------
+
+header-properties
+-----------------
+recipient_count:    1
+
+distinguished-properties
+------------------------
+attachment_count:         0
+internet_code_page:       utf-8
+message_class:            IPM.Note
+sender:                   from@domain.com
+...
+
+other properties
+-----------------------------------------+---------------+--------------------
+property-id                              | type          | value
+-----------------------------------------+---------------+--------------------
+0x0017 - PidTagImportance                | PtypInteger32 | 00 00 00 01
+0x001A - PidTagMessageClass              | PtypString8   | 'IPM.Note'
+0x0036 - PidTagSensitivity               | PtypInteger32 | 00 00 00 00
+0x0037 - PidTagSubject                   | PtypString8   | 'A test message'
+0x003B - PidTagSentRepresentingSearchKey | PtypBinary    | 21 bytes
+0x003D - PidTagSubjectPrefix             | PtypString8   | ''
+0x0042 - PidTagSentRepresentingName      | PtypString8   | 'from@domain.com'
+...
+```
+
 ## Changelog
 
 The release history including a chronicle of notable changes with each release is

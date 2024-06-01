@@ -23,6 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 dependencies = [
+    "click",
     "olefile",
     "typing_extensions>=4.9.0",
 ]
@@ -32,6 +33,9 @@ keywords = ["ms-oxmsg", "outlook", "email"]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.9"
+
+[project.scripts]
+oxmsg = "oxmsg.cli:oxmsg"
 
 [project.urls]
 Changelog = "https://github.com/scanny/python-oxmsg/blob/master/CHANGELOG.md"
