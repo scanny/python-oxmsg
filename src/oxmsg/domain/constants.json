@@ -1321,6 +1321,14 @@
       "ptyp_name": "PtypBinary"
     },
     {
+      "pid": "0x370A",
+      "pid_const_name": "PID_ATTACH_TAG",
+      "pid_name": "PidTagAttachTag",
+      "ptyp": "0x0102",
+      "ptyp_const_name": "PTYP_BINARY",
+      "ptyp_name": "PtypBinary"
+    },
+    {
       "pid": "0x370B",
       "pid_const_name": "PID_ATTACH_RENDERING_POSITION",
       "pid_name": "PidTagAttachRenderingPosition",
@@ -1335,6 +1343,14 @@
       "ptyp": "0x001F",
       "ptyp_const_name": "PTYP_STRING",
       "ptyp_name": "PtypString"
+    },
+    {
+      "pid": "0x3710",
+      "pid_const_name": "PID_ATTACH_MIME_SEQUENCE",
+      "pid_name": "PidTagAttachMimeSequence",
+      "ptyp": "0x0003",
+      "ptyp_const_name": "PTYP_INTEGER_32",
+      "ptyp_name": "PtypInteger32"
     },
     {
       "pid": "0x3712",
