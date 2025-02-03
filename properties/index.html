@@ -1,0 +1,1842 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../recipient/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
+    
+    
+      
+        <title>Properties - python-oxmsg</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oxmsg.properties" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="python-oxmsg" class="md-header__button md-logo" aria-label="python-oxmsg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            python-oxmsg
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Properties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="python-oxmsg" class="md-nav__button md-logo" aria-label="python-oxmsg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    python-oxmsg
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    python-oxmsg
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../message/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Message
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attachment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attachment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recipient
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Properties
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Properties
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.binary_prop_value" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary_prop_value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.body_encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      body_encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.date_prop_value" class="md-nav__link">
+    <span class="md-ellipsis">
+      date_prop_value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.int_prop_value" class="md-nav__link">
+    <span class="md-ellipsis">
+      int_prop_value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.str_prop_value" class="md-nav__link">
+    <span class="md-ellipsis">
+      str_prop_value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Properties.string_props_are_unicode" class="md-nav__link">
+    <span class="md-ellipsis">
+      string_props_are_unicode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      BaseProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty.factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty.name" class="md-nav__link">
+    <span class="md-ellipsis">
+      name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty.pid" class="md-nav__link">
+    <span class="md-ellipsis">
+      pid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty.ptyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ptyp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BaseProperty.ptyp_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      ptyp_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.BinaryProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      BinaryProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BinaryProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BinaryProperty.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.BooleanProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      BooleanProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BooleanProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.BooleanProperty.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.Float64Property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Float64Property
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Float64Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Float64Property.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.GuidProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      GuidProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GuidProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.GuidProperty.__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __str__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.GuidProperty.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.Int16Property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Int16Property
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Int16Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Int16Property.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.Int32Property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Int32Property
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Int32Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.Int32Property.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.StringProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      StringProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="StringProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.StringProperty.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.String8Property" class="md-nav__link">
+    <span class="md-ellipsis">
+      String8Property
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String8Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.String8Property.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oxmsg.properties.TimeProperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      TimeProperty
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TimeProperty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oxmsg.properties.TimeProperty.value" class="md-nav__link">
+    <span class="md-ellipsis">
+      value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Properties</h1>
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="oxmsg.properties"></a>
+    <div class="doc doc-contents first">
+
+        <p>Provides access to all properties of a top-level object (message, recipient, attachment).</p>
+<p>This object is accessed using the <code>.properties</code> property of a top-level object. The properties for
+each top-level object are segregated into its own properties object.</p>
+<p>Many property-ids (PIDs) and property-types (PTYPs) are available as constants in
+<code>oxml.domain.contants</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">oxmsg</span><span class="w"> </span><span class="kn">import</span> <span class="n">Message</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">oxmsg.domain</span><span class="w"> </span><span class="kn">import</span> <span class="n">constants</span> <span class="k">as</span> <span class="n">c</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">Message</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;message.msg&quot;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">properties</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">properties</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">properties</span><span class="o">.</span><span class="n">str_prop_value</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">PID_MESSAGE_CLASS</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="s1">&#39;IPM.Note&#39;</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.Properties" class="doc doc-heading">
+            <code>Properties</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>Provides access to properties from an OXMSG storage.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.binary_prop_value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">binary_prop_value</span><span class="p">(</span><span class="n">pid</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span> <span class="o">|</span> <span class="kc">None</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve bytes of PtypBinary property identified by <code>pid</code>.</p>
+<p>Returns <code>None</code> if property is not present in this collection.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.body_encoding" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">body_encoding</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The encoding used for a PidTagBody or PidTagHtml property of PtypString8/Binary.</p>
+<p>Must be cherry-picked because it is required before constructing the properties collection.</p>
+<p>Note when these are PtypString they unconditionally use UTF-16LE.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.date_prop_value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">date_prop_value</span><span class="p">(</span><span class="n">pid</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span> <span class="o">|</span> <span class="kc">None</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Read datetime property value from the properties stream.</p>
+<ul>
+<li>Microseconds are truncated.</li>
+<li>Returns <code>None</code> when no <code>pid</code> property is present in properties stream.</li>
+</ul>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.int_prop_value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">int_prop_value</span><span class="p">(</span><span class="n">pid</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve int value of PtypInteger32 property identified by <code>pid</code>.</p>
+<p>Returns <code>None</code> if no <code>pid</code> property is present in this collection.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.str_prop_value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">str_prop_value</span><span class="p">(</span><span class="n">pid</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve str value of PtypString or PtypString8 property identified by <code>pid</code>.</p>
+<p>Returns the empty str if property is not present in this collection.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Properties.string_props_are_unicode" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">string_props_are_unicode</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>True indicates PtypString properties in this message are encoded "utf-16-le".</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.BaseProperty" class="doc doc-heading">
+            <code>BaseProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+        <p>Base class for properties, providing common behaviors.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.BaseProperty.factory" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">factory</span><span class="p">(</span><span class="n">segment</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">storage</span><span class="p">:</span> <span class="n">m</span><span class="o">.</span><span class="n">PropStorageT</span><span class="p">,</span> <span class="n">str_prop_encoding</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">body_encoding</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">m</span><span class="o">.</span><span class="n">PropertyT</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Construct a property object of the appropriate sub-type for <code>segment</code>.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="oxmsg.properties.BaseProperty.name" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">name</span><span class="p">:</span> <span class="nb">str</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The Microsft name for this property, like "PidTagMessageClass".</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="oxmsg.properties.BaseProperty.pid" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">pid</span><span class="p">:</span> <span class="nb">int</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The property-id (PID) for this property, like 0x3701 for attachment bytes.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="oxmsg.properties.BaseProperty.ptyp" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">ptyp</span><span class="p">:</span> <span class="nb">int</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The property-type (PTYP) for this property, like 0x0102 for PtypBinary.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="oxmsg.properties.BaseProperty.ptyp_name" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">ptyp_name</span><span class="p">:</span> <span class="nb">str</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The Microsft name for the type of this property, like "PtypString".</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.BinaryProperty" class="doc doc-heading">
+            <code>BinaryProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypBinary OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.BinaryProperty.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bytes</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The bytes of this binary property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.BooleanProperty" class="doc doc-heading">
+            <code>BooleanProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypBoolean OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.BooleanProperty.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The boolean value of this property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.Float64Property" class="doc doc-heading">
+            <code>Float64Property</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypFloating64 OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Float64Property.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">float</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The 64-bit floating-point value of this property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.GuidProperty" class="doc doc-heading">
+            <code>GuidProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypGuid OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.GuidProperty.__str__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Hex str representation of this UUID like '9d947746-9662-40a8-a526-abd4faec9737'.</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.GuidProperty.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The value of this property as a uuid.UUID object.</p>
+<p>The <code>str</code> value of this object is the standard-form string for the UUID, like:
+'9d947746-9662-40a8-a526-abd4faec9737'.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.Int16Property" class="doc doc-heading">
+            <code>Int16Property</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypInteger16 OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Int16Property.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The integer value of this property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.Int32Property" class="doc doc-heading">
+            <code>Int32Property</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypInteger32 OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.Int32Property.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The integer value of this property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.StringProperty" class="doc doc-heading">
+            <code>StringProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypString OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.StringProperty.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The decoded str from this string property.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.String8Property" class="doc doc-heading">
+            <code>String8Property</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypString8 (8-bit characters, not Unicode) OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.String8Property.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The encoded bytes of this string property.</p>
+<p>The caller is responsible for determining the encoding and applying it to get a str value.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="oxmsg.properties.TimeProperty" class="doc doc-heading">
+            <code>TimeProperty</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="oxmsg.properties.BaseProperty" href="#oxmsg.properties.BaseProperty">BaseProperty</a></code></p>
+
+
+        <p>Property for PtypTime OLE properties.</p>
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="oxmsg.properties.TimeProperty.value" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>The value of this property as a timezone-aware <code>datetime</code>.</p>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 Steve Canny
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/scanny/python-oxmsg" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.integrate", "search.suggest", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f13b1293.min.js"></script>
+      
+    
+  </body>
+</html>
