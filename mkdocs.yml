@@ -24,7 +24,6 @@ nav:
   - recipient.md
   - properties.md
 
-
 plugins:
   - mkdocstrings:
       handlers:

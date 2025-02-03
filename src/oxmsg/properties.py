@@ -264,8 +264,6 @@ class BaseProperty:
             return TimeProperty(segment)
 
         # -- default to Int32 --
-        print(f"{len(segment)=}")
-        print(f"{repr(segment)=}")
         return Int32Property(segment)
 
     @property

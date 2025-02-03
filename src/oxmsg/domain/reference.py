@@ -119,6 +119,9 @@ property_descriptors: dict[int, PropertyDescriptor] = {
     c.PID_ATTACH_METHOD: PropertyDescriptor(
         c.PID_ATTACH_METHOD, "PidTagAttachMethod", c.PTYP_INTEGER_32
     ),
+    c.PID_ATTACH_MIME_SEQUENCE: PropertyDescriptor(
+        c.PID_ATTACH_MIME_SEQUENCE, "PidTagAttachMimeSequence", c.PTYP_INTEGER_32
+    ),
     c.PID_ATTACH_MIME_TAG: PropertyDescriptor(
         c.PID_ATTACH_MIME_TAG, "PidTagAttachMimeTag", c.PTYP_STRING
     ),
@@ -132,6 +135,7 @@ property_descriptors: dict[int, PropertyDescriptor] = {
         c.PID_ATTACH_RENDERING_POSITION, "PidTagAttachRenderingPosition", c.PTYP_INTEGER_32
     ),
     c.PID_ATTACH_SIZE: PropertyDescriptor(c.PID_ATTACH_SIZE, "PidTagAttachSize", c.PTYP_INTEGER_32),
+    c.PID_ATTACH_TAG: PropertyDescriptor(c.PID_ATTACH_TAG, "PidTagAttachTag", c.PTYP_BINARY),
     c.PID_AUTHORIZING_USERS: PropertyDescriptor(
         c.PID_AUTHORIZING_USERS, "PidTagAuthorizingUsers", c.PTYP_BINARY
     ),
