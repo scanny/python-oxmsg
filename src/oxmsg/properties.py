@@ -408,9 +408,9 @@ class String8Property(BaseProperty):
 
         The caller is responsible for determining the encoding and applying it to get a str value.
         """
-        return self._storage.property_stream_bytes(self.pid, self.ptyp).decode(
-            self._body_encoding if self.pid == c.PID_BODY else self._str_prop_encoding
-        )
+        raw_value = self._storage.property_stream_bytes(self.pid, self.ptyp)
+        encoding = self._body_encoding if self.pid == c.PID_BODY else self._str_prop_encoding
+        return _decode_best_effort(raw_value, encoding)
 
 
 class TimeProperty(BaseProperty):
@@ -425,6 +425,59 @@ class TimeProperty(BaseProperty):
         epoch = dt.datetime(1601, 1, 1, tzinfo=dt.timezone.utc)
         seconds_since_epoch = hundred_nanosecond_intervals_since_epoch // 1e7
         return epoch + dt.timedelta(seconds=seconds_since_epoch)
+
+
+def _decode_best_effort(raw_value: bytes, primary_encoding: str) -> str:
+    """Decode `raw_value` using `primary_encoding` with pragmatic fallbacks.
+
+    Some MSG files are observed to declare an encoding but store bytes that do not strictly
+    conform. Rather than fail, try a small set of compatible encodings and, as a last resort,
+    decode with replacement characters so that parsing succeeds.
+    """
+    candidates = _candidate_encodings(primary_encoding)
+    for encoding in candidates:
+        try:
+            return raw_value.decode(encoding)
+        except LookupError:
+            continue
+        except UnicodeDecodeError:
+            continue
+
+    for encoding in candidates:
+        try:
+            return raw_value.decode(encoding, errors="replace")
+        except LookupError:
+            continue
+
+    return raw_value.decode("latin-1", errors="replace")
+
+
+def _candidate_encodings(primary_encoding: str) -> tuple[str, ...]:
+    """Return preferred encodings to try for a declared `primary_encoding`."""
+    encoding = primary_encoding or "latin-1"
+    lower = encoding.lower()
+
+    choices: list[str] = [encoding]
+
+    if lower in {"utf-8", "utf8", "utf-8-sig"}:
+        choices.extend(["cp1252", "latin-1"])
+    elif lower in {"iso-8859-1", "iso8859-1", "iso-8859-15", "iso8859-15", "latin-1"}:
+        choices.append("cp1252")
+    elif lower in {"gb2312", "gbk", "gb18030", "euc-cn", "euc_cn"}:
+        choices.append("gb18030")
+    elif lower in {"iso-2022-jp", "iso2022_jp", "csiso2022jp"}:
+        choices.extend(["shift_jis", "cp932"])
+    elif lower in {"shift_jis", "sjis"}:
+        choices.append("cp932")
+    elif lower in {"windows-950", "cp950", "big5"}:
+        choices.append("cp950")
+    elif lower in {"windows-874", "cp874"}:
+        choices.append("cp874")
+
+    choices.append("latin-1")
+
+    # Preserve order while de-duplicating
+    return tuple(dict.fromkeys(choices))
 
 
 def _batched_bytes(block: bytes, n: int) -> Iterator[bytes]:
