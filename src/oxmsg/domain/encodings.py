@@ -60,12 +60,12 @@ _CODE_PAGE_ENCODINGS = {
     866: "cp866",  # -- OEM Russian --
     869: "ibm869",  # -- OEM Modern Greek --
     870: "cp870",  # -- IBM EBCDIC Multilingual/ROECE (Latin 2) --
-    874: "windows-874",  # -- ANSI/OEM Thai (ISO 8859-11) --
+    874: "cp874",  # -- ANSI/OEM Thai (ISO 8859-11) --
     875: "cp875",  # -- IBM EBCDIC Greek Modern --
     932: "shift_jis",  # -- ANSI/OEM Japanese --
-    936: "gb2312",  # -- ANSI/OEM Simplified Chinese (PRC, Singapore) --
-    949: "ks_c_5601-1987",  # -- ANSI/OEM Korean (Unified Hangul Code) --
-    950: "windows-950",  # -- ANSI/OEM Traditional Chinese (Taiwan, Hong Kong SAR, PRC) --
+    936: "gb18030",  # -- ANSI/OEM Simplified Chinese (PRC, Singapore) --
+    949: "cp949",  # -- ANSI/OEM Korean (Unified Hangul Code) --
+    950: "cp950",  # -- ANSI/OEM Traditional Chinese (Taiwan, Hong Kong SAR, PRC) --
     1026: "IBM1026",  # -- IBM EBCDIC Turkish (Latin 5) --
     1047: "cp1047",  # -- IBM EBCDIC Latin 1/Open System --
     1140: "cp1140",  # -- IBM EBCDIC US-Canada (037 + Euro symbol) --
